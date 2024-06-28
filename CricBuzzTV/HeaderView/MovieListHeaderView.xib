@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Overpass-SemiBold.ttf">
+            <string>Overpass-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieListHeaderView" customModule="CricBuzzTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX3-zQ-nAt">
+                    <rect key="frame" x="0.0" y="0.0" width="476" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liX-kj-svd">
+                            <rect key="frame" x="10" y="8.6666666666666661" width="407" height="18.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Overpass-SemiBold" family="Overpass" pointSize="16"/>
+                            <color key="textColor" red="0.1764705882" green="0.20000000000000001" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Overpass-Regular" family="Overpass" pointSize="18"/>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGg-2a-TAJ">
+                            <rect key="frame" x="427" y="1" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="bjL-fT-alc"/>
+                                <constraint firstAttribute="height" constant="34" id="hjb-18-PBU"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="chevron.down" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v2-Uq-Qvm">
+                            <rect key="frame" x="0.0" y="0.0" width="476" height="36"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="didClickExpandAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aMb-t8-u60"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abP-WC-wcJ">
+                            <rect key="frame" x="7" y="35.666666666666664" width="469" height="0.3333333333333357"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="QUl-C4-FVI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VGg-2a-TAJ" firstAttribute="centerY" secondItem="QX3-zQ-nAt" secondAttribute="centerY" id="1sO-Ac-wtv"/>
+                        <constraint firstItem="VGg-2a-TAJ" firstAttribute="leading" secondItem="liX-kj-svd" secondAttribute="trailing" constant="10" id="JaI-Hg-r31"/>
+                        <constraint firstItem="abP-WC-wcJ" firstAttribute="leading" secondItem="QX3-zQ-nAt" secondAttribute="leading" constant="7" id="Jzn-6e-34Z"/>
+                        <constraint firstAttribute="height" constant="36" id="KY5-Cw-InD"/>
+                        <constraint firstItem="9v2-Uq-Qvm" firstAttribute="top" secondItem="QX3-zQ-nAt" secondAttribute="top" id="Lmb-qW-bsi"/>
+                        <constraint firstItem="liX-kj-svd" firstAttribute="leading" secondItem="QX3-zQ-nAt" secondAttribute="leading" constant="10" id="OSu-5F-QFW"/>
+                        <constraint firstAttribute="bottom" secondItem="9v2-Uq-Qvm" secondAttribute="bottom" id="Qu1-DX-oMP"/>
+                        <constraint firstAttribute="trailing" secondItem="9v2-Uq-Qvm" secondAttribute="trailing" id="Sxp-yK-0yE"/>
+                        <constraint firstAttribute="trailing" secondItem="abP-WC-wcJ" secondAttribute="trailing" id="UxJ-Dq-rhD"/>
+                        <constraint firstAttribute="trailing" secondItem="VGg-2a-TAJ" secondAttribute="trailing" constant="15" id="hfw-lQ-Hi2"/>
+                        <constraint firstAttribute="bottom" secondItem="abP-WC-wcJ" secondAttribute="bottom" id="psg-iY-sKf"/>
+                        <constraint firstItem="9v2-Uq-Qvm" firstAttribute="leading" secondItem="QX3-zQ-nAt" secondAttribute="leading" id="uQh-AD-OOI"/>
+                        <constraint firstItem="liX-kj-svd" firstAttribute="centerY" secondItem="QX3-zQ-nAt" secondAttribute="centerY" id="uxj-kV-RJQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QX3-zQ-nAt" secondAttribute="trailing" id="6X0-ZR-3yX"/>
+                <constraint firstItem="QX3-zQ-nAt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Trx-Yz-D9p"/>
+                <constraint firstItem="QX3-zQ-nAt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VP2-8l-tRM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerTitle" destination="liX-kj-svd" id="29T-mz-2Tf"/>
+                <outlet property="openCloseButton" destination="VGg-2a-TAJ" id="SEB-dS-kNX"/>
+            </connections>
+            <point key="canvasLocation" x="102.29007633587786" y="-110.21126760563381"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
